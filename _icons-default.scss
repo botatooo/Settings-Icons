@@ -9,6 +9,7 @@
 
 /* Extra User Settings */
 @include icon(DiscordNitro, "./icons/default/subscriptions.svg", var(--settings-subscriptions));
+@include icon_alt(DiscordNitro);
 @include icon(LibraryInventory, "./icons/default/gift-inventory.svg");
 @include icon(NitroServerBoost, "./icons/default/server-boost.svg");
 @include icon(HypesquadOnline, "./icons/default/hypesquad.svg", var(--settings-hypesquad));
@@ -31,3 +32,4 @@
 
 /* Logout */
 @include icon(logout, "./icons/default/logout.svg", var(--settings-logout));
+@include icon_alt(logout);

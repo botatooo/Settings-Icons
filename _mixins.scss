@@ -8,9 +8,8 @@
     };
 }
 
-@mixin icon_alt($item_id, $path) {
-    .side-8zPYf6 > .item-PXvHYJ[data-item-id="#{$item-id}"][style*="color: rgb(255, 255, 255)"]::before {
-        --icon: #{svg($path)};
-        --settings-icon-color: --settings-alt-focused;
+@mixin icon_alt($item_id) {
+    .side-8zPYf6 > .item-PXvHYJ[data-item-id="#{$item-id}"][style*="255"]::before {
+        --settings-icon-color: var(--settings-alt-focused);
     }
 }
