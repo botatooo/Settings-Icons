@@ -8,7 +8,7 @@
 @include icon(Billing, "./icons/default/billing.svg");
 
 /* Extra User Settings */
-@include icon(DiscordNitro, "./icons/default/subscriptions.svg", var(--settings-subscriptions), var(--settings-alt-focused));
+@include icon_alt(DiscordNitro, "./icons/default/subscriptions.svg", var(--settings-subscriptions));
 @include icon(LibraryInventory, "./icons/default/gift-inventory.svg");
 @include icon(NitroServerBoost, "./icons/default/server-boost.svg");
 @include icon(HypesquadOnline, "./icons/default/hypesquad.svg", var(--settings-hypesquad));
@@ -30,5 +30,5 @@
 @include icon(changelog, "./icons/default/changelog.svg");
 
 /* Logout */
-@include icon(logout, "./icons/default/logout.svg", var(--settings-logout), var(--settings-alt-focused));
+@include icon_alt(logout, "./icons/default/logout.svg", var(--settings-logout));
 // @include icon_alt(logout);

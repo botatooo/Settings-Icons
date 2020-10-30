@@ -1,19 +1,20 @@
-@mixin icon($item_id, $path, $color: black, $hover-color: #{var(--settings-icon-color)}) {
+@mixin icon($item_id, $path, $color: black) {
     .side-8zPYf6 > .item-PXvHYJ[data-item-id="#{$item-id}"]:not(.role-3wi9Tf)::before {
         --icon: #{svg($path)};
 
         @if ($color != black) {
             --settings-icon-color: #{$color};
         }
-
-        &[style*="255"] {
-            --settings-icon-color: #{$hover-color}
-        }
     };
 }
 
-@mixin icon_alt($item_id) {
-    .side-8zPYf6 > .item-PXvHYJ[data-item-id="#{$item-id}"][style*="255"]::before {
-        --settings-icon-color: var(--settings-alt-focused);
-    }
+@mixin icon_alt($item_id, $path, $color) {
+    .side-8zPYf6 > .item-PXvHYJ[data-item-id="#{$item-id}"]:not(.role-3wi9Tf)::before {
+        --icon: #{svg($path)};
+        --settings-icon-color: #{$color};
+
+        &[style*="255"] {
+            --settings-icon-color: white;
+        }
+    };
 }
