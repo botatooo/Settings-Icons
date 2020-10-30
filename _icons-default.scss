@@ -31,4 +31,4 @@
 
 /* Logout */
 @include icon(logout, "./icons/default/logout.svg", var(--settings-logout), var(--settings-alt-focused));
-@include icon_alt(logout);
+// @include icon_alt(logout);
