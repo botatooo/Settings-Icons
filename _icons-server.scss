@@ -27,7 +27,7 @@
 @include icon(BANS, "./icons/server/bans.svg");
 
 // Delete
-@include icon_alt(DELETE, "./icons/server/delete.svg", var(--settings-guild-delete), var(--settings-alt-focused));
+@include icon_alt(DELETE, "./icons/server/delete.svg", var(--settings-guild-delete));
 // @include icon_alt(DELETE);
 
 /*Channel Tab*/
