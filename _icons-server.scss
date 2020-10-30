@@ -18,7 +18,7 @@
 @include icon(COMMUNITY_WELCOME, "./icons/server/community-welcome.svg");
 
 /* Boosting */
-@include icon(GUILD_PREMIUM, "./icons/server/premium.svg", var(--settings-guild-premium));
+@include icon(GUILD_PREMIUM, "./icons/server/premium.svg", var(--settings-guild-premium), var(--settings-alt-focused));
 @include icon_alt(GUILD_PREMIUM);
 
 /* User Management */
@@ -27,7 +27,7 @@
 @include icon(BANS, "./icons/server/bans.svg");
 
 // Delete
-@include icon(DELETE, "./icons/server/delete.svg", var(--settings-guild-delete));
+@include icon(DELETE, "./icons/server/delete.svg", var(--settings-guild-delete), var(--settings-alt-focused));
 @include icon_alt(DELETE);
 
 /*Channel Tab*/

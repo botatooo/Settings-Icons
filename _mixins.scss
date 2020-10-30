@@ -1,9 +1,13 @@
-@mixin icon($item_id, $path, $color: black) {
+@mixin icon($item_id, $path, $color: black, $hover-color: #{var(--settings-icon-color)}) {
     .side-8zPYf6 > .item-PXvHYJ[data-item-id="#{$item-id}"]:not(.role-3wi9Tf)::before {
         --icon: #{svg($path)};
 
         @if ($color != black) {
             --settings-icon-color: #{$color};
+        }
+
+        &[style*="255"] {
+            --settings-icon-color: #{$hover-color}
         }
     };
 }
